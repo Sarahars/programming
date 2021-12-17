@@ -102,5 +102,66 @@ console.log("Where is Your firstname and lastname?!")
       console.log(i);
   }
 
+  // attention cette boucle ne s'arrete pas !!!
 
+  /*  function printIamDev(){
+      var x = 0;
+      var y = 0;
+      while(y < 6 || x < 5){
+      console.log("I'm Full Stack JS");
+       x ++ ;
+       y = y + 2;
+       console.log(y)
+     }
+    }
+  printIamDev(); */
 
+  function logIn(userName, password){
+      if( userName == "Sarah" && password== "123456789"){
+          console.log("succeed");
+      }
+      else{
+          console.log("retry!");
+      }
+  }
+  logIn("Sarah", "123456789");
+
+  function list0(){
+    var listed = [];
+
+    for(var i = 0; i<10 ; i++){
+         listed [i] = i +1 ;
+    }
+    console.log(listed);
+}
+
+list0()
+
+function list1(){
+    var list = [];
+
+    for(var i = 1; i<=10 ; i++){
+    list.push (i*2);
+}
+    console.log(list);
+}
+
+list1()
+
+var studentmarks = [10, 12.5 , 15 , 20 , 8]
+function classavrage(){
+    var sum =0;
+for(i = 0 ; i<studentmarks.length ; i++){
+    sum = sum + studentmarks[i];
+    var avrage = sum / studentmarks.length;
+}
+console.log(sum);
+console.log(avrage);
+
+if(avrage >= 10){
+    console.log("Admis")
+}else{
+console.log("Ajourné")
+}
+}
+classavrage() 
